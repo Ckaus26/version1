@@ -1,0 +1,347 @@
+table f_sales_demand_current
+	lineageTag: 3a9e98c3-0897-478b-a073-ea2cda1ab21b
+
+	column IID
+		dataType: string
+		lineageTag: ae73f29f-96cc-4bc1-9514-cb288798548d
+		summarizeBy: none
+		sourceColumn: IID
+
+		annotation SummarizationSetBy = Automatic
+
+	column DSN
+		dataType: string
+		lineageTag: 2b7680bc-f564-4932-b8a5-e3310aed5fa7
+		summarizeBy: none
+		sourceColumn: DSN
+
+		annotation SummarizationSetBy = Automatic
+
+	column SYS_INS_DTTM
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9175a855-1744-472d-afee-06026032cf55
+		summarizeBy: none
+		sourceColumn: SYS_INS_DTTM
+
+		variation Variation
+			isDefault
+			relationship: aae676ba-8eb1-456b-a52e-17832f378069
+			defaultHierarchy: LocalDateTable_a4877b0f-207a-4b87-b8e6-c13425b81933.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column SYS_UPD_DTTM
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 55fd7c7b-2515-4d88-9fa9-d4e8b293e73c
+		summarizeBy: none
+		sourceColumn: SYS_UPD_DTTM
+
+		variation Variation
+			isDefault
+			relationship: b624bb0f-b921-445d-8e86-0edfa0873006
+			defaultHierarchy: LocalDateTable_2bd9d5f5-0515-41d9-bf97-f5f3495eab2a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column D_ITEM_WID
+		dataType: int64
+		formatString: 0
+		lineageTag: 0cc29a8d-96cc-4bb3-9d7e-3d62c466dc20
+		summarizeBy: count
+		sourceColumn: D_ITEM_WID
+
+		annotation SummarizationSetBy = Automatic
+
+	column D_DATE_WID
+		dataType: int64
+		formatString: 0
+		lineageTag: a1544cd3-ed4a-44f8-b9de-ceb5c993e589
+		summarizeBy: count
+		sourceColumn: D_DATE_WID
+
+		annotation SummarizationSetBy = Automatic
+
+	column SHIP_POINT_D_INVENTORY_ORGANIZATION_WID
+		dataType: int64
+		formatString: 0
+		lineageTag: 79c6c6da-e101-4625-ac47-e2524afcd08c
+		summarizeBy: count
+		sourceColumn: SHIP_POINT_D_INVENTORY_ORGANIZATION_WID
+
+		annotation SummarizationSetBy = Automatic
+
+	column D_BUSINESS_UNIT_WID
+		dataType: int64
+		formatString: 0
+		lineageTag: 14b279db-0fa0-494b-bbdb-9b820651c330
+		summarizeBy: count
+		sourceColumn: D_BUSINESS_UNIT_WID
+
+		annotation SummarizationSetBy = Automatic
+
+	column SHIP_TO_D_CUSTOMER_ACCOUNT_WID
+		dataType: int64
+		formatString: 0
+		lineageTag: 84a90228-71f6-4dcf-8aa2-9d8d14945513
+		summarizeBy: count
+		sourceColumn: SHIP_TO_D_CUSTOMER_ACCOUNT_WID
+
+		annotation SummarizationSetBy = Automatic
+
+	column D_END_CUSTOMER_WID
+		dataType: int64
+		formatString: 0
+		lineageTag: 6f6ee50c-26b9-44aa-873e-2b52cc4e0134
+		summarizeBy: count
+		sourceColumn: D_END_CUSTOMER_WID
+
+		annotation SummarizationSetBy = Automatic
+
+	column D_DFU_WID
+		dataType: int64
+		formatString: 0
+		lineageTag: de9c4607-7ad2-4391-96ea-074b88c97f6c
+		summarizeBy: count
+		sourceColumn: D_DFU_WID
+
+		annotation SummarizationSetBy = Automatic
+
+	column D_SKU_WID
+		dataType: int64
+		formatString: 0
+		lineageTag: 00ea7c25-9c16-4659-9639-040421f4c234
+		summarizeBy: count
+		sourceColumn: D_SKU_WID
+
+		annotation SummarizationSetBy = Automatic
+
+	column FORECAST_KG
+		dataType: double
+		lineageTag: 450d4630-b5b7-4112-94ee-d166696b94b7
+		summarizeBy: sum
+		sourceColumn: FORECAST_KG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SALES_KG
+		dataType: double
+		lineageTag: a849f773-51a7-42a4-964d-12aa5c06ac02
+		summarizeBy: sum
+		sourceColumn: SALES_KG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ERROR_KG
+		dataType: double
+		lineageTag: 0cd7be19-879f-4069-971d-c9ec6be64d56
+		summarizeBy: sum
+		sourceColumn: ERROR_KG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ABS_ERROR_KG
+		dataType: double
+		lineageTag: ff407882-a20b-4b95-8c85-15bfa11399de
+		summarizeBy: sum
+		sourceColumn: ABS_ERROR_KG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column FORECAST_LB
+		dataType: double
+		lineageTag: 2c090fa4-43c4-487c-a169-03cdda920cf1
+		summarizeBy: sum
+		sourceColumn: FORECAST_LB
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SALES_LB
+		dataType: double
+		lineageTag: 67b6db20-3395-4f38-8486-c783a33bd104
+		summarizeBy: sum
+		sourceColumn: SALES_LB
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ERROR_LB
+		dataType: double
+		lineageTag: 29eab1f8-342a-40cb-99df-30a69c87a250
+		summarizeBy: sum
+		sourceColumn: ERROR_LB
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ABS_ERROR_LB
+		dataType: double
+		lineageTag: 3f6a852b-81e1-402b-8834-c3316463c025
+		summarizeBy: sum
+		sourceColumn: ABS_ERROR_LB
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column OPEN_KG
+		dataType: double
+		lineageTag: b825fcc5-82ca-4c4e-b443-52ae48a1fa9d
+		summarizeBy: sum
+		sourceColumn: OPEN_KG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column OPEN_LB
+		dataType: double
+		lineageTag: 9df951a6-aa6f-40d0-8af4-ba423dfe24a4
+		summarizeBy: sum
+		sourceColumn: OPEN_LB
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column REQUESTED_KG
+		dataType: double
+		lineageTag: fbb7922e-e2f3-4483-b72b-62da5f5fdaf3
+		summarizeBy: sum
+		sourceColumn: REQUESTED_KG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column REQUESTED_LB
+		dataType: double
+		lineageTag: 8118ebca-7b74-41ae-a058-6cb89326f1e0
+		summarizeBy: sum
+		sourceColumn: REQUESTED_LB
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column FUTURE_FORECAST_KG
+		dataType: double
+		lineageTag: c410f2c9-c3fa-492d-9f0b-92db0a7c883f
+		summarizeBy: sum
+		sourceColumn: FUTURE_FORECAST_KG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column FUTURE_FORECAST_LB
+		dataType: double
+		lineageTag: f0626574-b171-4f94-b349-49b327102907
+		summarizeBy: sum
+		sourceColumn: FUTURE_FORECAST_LB
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column HISTORICAL_FORECAST_KG
+		dataType: double
+		lineageTag: 06e20bfe-85e1-4c38-8d8d-137ca5e8ce32
+		summarizeBy: sum
+		sourceColumn: HISTORICAL_FORECAST_KG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column HISTORICAL_FORECAST_LB
+		dataType: double
+		lineageTag: 1ba66859-1bc8-44ff-b84d-c317e8287b00
+		summarizeBy: sum
+		sourceColumn: HISTORICAL_FORECAST_LB
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ACTUAL_SHIPMENT_DATE_EUROPE
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 82497eea-8729-4edd-ae88-d592bf889fa7
+		summarizeBy: none
+		sourceColumn: ACTUAL_SHIPMENT_DATE_EUROPE
+
+		variation Variation
+			isDefault
+			relationship: 13200620-a619-429b-8d83-20936b2dc136
+			defaultHierarchy: LocalDateTable_f919fbb6-a18f-476e-85fb-a65dc4574a9f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column ACTUAL_SHIPMENT_DATE
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 724a8ca5-0a19-4bf1-8008-6b35ac88dd96
+		summarizeBy: none
+		sourceColumn: ACTUAL_SHIPMENT_DATE
+
+		variation Variation
+			isDefault
+			relationship: cd6437b1-3333-4ccf-9881-d13e2a67de51
+			defaultHierarchy: LocalDateTable_70db6264-e6ba-410a-9cf3-5ca044b4a25b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column = 1*1000
+		dataType: int64
+		formatString: 0
+		lineageTag: eaf4fe12-f183-41a6-a6e6-96b13dbee900
+		summarizeBy: sum
+		isDataTypeInferred
+
+		annotation SummarizationSetBy = Automatic
+
+	column SALES_LTR
+		dataType: double
+		lineageTag: a6f0b05d-e1cd-44a6-91f7-920882d6c7a9
+		summarizeBy: sum
+		sourceColumn: SALES_LTR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Custom
+		dataType: string
+		lineageTag: 7df3aef9-9275-4b45-a98a-95c15b99deb2
+		summarizeBy: none
+		sourceColumn: Custom
+
+		annotation SummarizationSetBy = Automatic
+
+	partition f_sales_demand_current = m
+		mode: import
+		source =
+				let
+				    Source = Value.NativeQuery(Databricks.Catalogs("adb-2186712216710513.13.azuredatabricks.net", "/sql/1.0/warehouses/ec095c6cff2c0f9f", [Catalog="devcurated", Database=null, EnableAutomaticProxyDiscovery=null]){[Name="devcurated",Kind="Database"]}[Data], "select * from datawarehouse.f_sale_demand_forecast_current limit 10", null, [EnableFolding=true]),
+				    #"Added Custom" = Table.AddColumn(Source, "Custom", each 33*1000)
+				in
+				    #"Added Custom"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

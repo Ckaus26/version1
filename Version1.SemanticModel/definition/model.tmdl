@@ -1,0 +1,23 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["f_sales_demand_current"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.128.952.0 (24.04)
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table f_sales_demand_current
+ref table DateTableTemplate_b583df16-7586-4ec3-8c12-d440a5eb8b0c
+ref table LocalDateTable_a4877b0f-207a-4b87-b8e6-c13425b81933
+ref table LocalDateTable_2bd9d5f5-0515-41d9-bf97-f5f3495eab2a
+ref table LocalDateTable_f919fbb6-a18f-476e-85fb-a65dc4574a9f
+ref table LocalDateTable_70db6264-e6ba-410a-9cf3-5ca044b4a25b
+

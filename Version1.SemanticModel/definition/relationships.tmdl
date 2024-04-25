@@ -1,0 +1,20 @@
+relationship aae676ba-8eb1-456b-a52e-17832f378069
+	joinOnDateBehavior: datePartOnly
+	fromColumn: f_sales_demand_current.SYS_INS_DTTM
+	toColumn: LocalDateTable_a4877b0f-207a-4b87-b8e6-c13425b81933.Date
+
+relationship b624bb0f-b921-445d-8e86-0edfa0873006
+	joinOnDateBehavior: datePartOnly
+	fromColumn: f_sales_demand_current.SYS_UPD_DTTM
+	toColumn: LocalDateTable_2bd9d5f5-0515-41d9-bf97-f5f3495eab2a.Date
+
+relationship 13200620-a619-429b-8d83-20936b2dc136
+	joinOnDateBehavior: datePartOnly
+	fromColumn: f_sales_demand_current.ACTUAL_SHIPMENT_DATE_EUROPE
+	toColumn: LocalDateTable_f919fbb6-a18f-476e-85fb-a65dc4574a9f.Date
+
+relationship cd6437b1-3333-4ccf-9881-d13e2a67de51
+	joinOnDateBehavior: datePartOnly
+	fromColumn: f_sales_demand_current.ACTUAL_SHIPMENT_DATE
+	toColumn: LocalDateTable_70db6264-e6ba-410a-9cf3-5ca044b4a25b.Date
+
